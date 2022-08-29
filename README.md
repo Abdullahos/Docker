@@ -21,12 +21,21 @@ sudo docker run nginx:latest
 to run container in background without waiting for input
 sudo docker run -d nginx:latest
 
-## stop container
+## stop container:
 sudo docker stop <container_id>
 
-## port mapping from host ---to---> container
+## exposing port: port mapping from host ---to---> container:
 
 sudo docker run -d -p 8080:80 nginx:latest
 this will run run the container on port 8080
 ![image](https://user-images.githubusercontent.com/51336081/187317192-5e51f3c8-4a9f-42a2-b7c4-67e3546ce202.png)
+
+## Exposing multiple ports:
+sudo docker run -d -p 8080:80 nginx:latest
+sudo docker run -d -p 3030:80 nginx:latest
+
+![image](https://user-images.githubusercontent.com/51336081/187317667-b8546026-6d07-48c4-9645-ba0d6b86fdc0.png)
+
+![image](https://user-images.githubusercontent.com/51336081/187317680-52ab9dfc-b4ef-4527-9ad5-40a88d6a006c.png)
+
 

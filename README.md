@@ -53,7 +53,7 @@ sudo docker ps -a
 ```
 ![image](https://user-images.githubusercontent.com/51336081/187319161-120fec28-db70-4c8c-b737-5b4cb796a5b9.png)
 
-##remove container
+## remove container
 
 stop != remove
 to remove:
@@ -68,3 +68,25 @@ sudo docker run --name mongo -d nginx:latest
 
 ## How to share data between the host and container or between containers
 Using **Volumes**
+1-create directory in host to be shared with container
+```
+mkdir webApp
+```
+2-create html file(must be named index.html to override the nginx one)
+```
+touch index.html
+```
+3-open it and start editing then save it ctrl+s:
+```
+<html>
+<h1>Hello, i am nginx!</h1>
+</html>
+```
+4-create container with volum
+```
+sudo docker run --name website -v $(pwd)-d -p 8080:80 nginx:latest
+```
+5-open browser and navigate to localhost:8080
+![image](https://user-images.githubusercontent.com/51336081/187367230-07621171-8217-4075-9487-cd506b1ffdd9.png)
+
+**Then any changes in the current dir takes place in the container**

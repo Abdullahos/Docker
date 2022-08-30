@@ -87,6 +87,7 @@ touch index.html
 sudo docker run --name website -v $(pwd)-d -p 8080:80 nginx:latest
 ```
 5-open browser and navigate to localhost:8080
+
 ![image](https://user-images.githubusercontent.com/51336081/187367230-07621171-8217-4075-9487-cd506b1ffdd9.png)
 
 **Then any changes in the current dir takes place in the container**

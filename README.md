@@ -19,7 +19,7 @@ sudo docker ps
 ```
 ![image](https://user-images.githubusercontent.com/51336081/187316194-904b38f5-fadb-4079-9550-20fbd6666da8.png)
 
-##Run container in detached mode:
+## Run container in detached mode:
 to run container in background without waiting for input
 ```
 sudo docker run -d nginx:latest
@@ -56,7 +56,7 @@ sudo docker ps -a
 
 ## remove container
 
-stop != remove
+stop != remove, you need to stop the running continer first to remove it
 to remove:
 ```
 docker rm <id>

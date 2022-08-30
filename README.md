@@ -60,3 +60,9 @@ to remove:
 ```
 docker rm <id>
 ```
+
+## Naming Container
+```
+sudo docker run --name mongo -d nginx:latest
+```
+

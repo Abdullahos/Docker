@@ -8,16 +8,17 @@ Is a Social Platfrom for you to find and share containers(not vm)
 container is a running instance of an image
 Contains the environment/dependencies to run your code
 
+## Pull Container:
+```
+sudo docker run nginx:latest
+```
+
 ## List running containers:
 ```
 sudo docker ps 
 ```
 ![image](https://user-images.githubusercontent.com/51336081/187316194-904b38f5-fadb-4079-9550-20fbd6666da8.png)
 
-## Pull Container:
-```
-sudo docker run nginx:latest
-```
 ##Run container in detached mode:
 to run container in background without waiting for input
 ```
